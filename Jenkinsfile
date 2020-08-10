@@ -15,6 +15,7 @@ pipeline {
       }
       steps {
         sh 'cd Ch03/example-maven-project/'
+        sh 'pwd'
         sh '''
 
 

@@ -14,9 +14,8 @@ pipeline {
 
       }
       steps {
-        sh '''cd Ch03/example-maven-project/
-&&
-
+        sh 'cd Ch03/example-maven-project/'
+        sh '''
 
 
 mvn -Dmaven.test.failure.ignore clean package'''

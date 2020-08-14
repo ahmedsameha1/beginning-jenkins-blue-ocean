@@ -14,7 +14,7 @@ pipeline {
 
       }
       steps {
-        sh 'cd Ch03/example-maven-project/'
+        sh 'cd Ch03/example-maven-project/ && pwd'
         sh 'pwd'
         sh '''
 

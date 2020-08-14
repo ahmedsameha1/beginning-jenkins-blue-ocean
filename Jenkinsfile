@@ -21,7 +21,7 @@ pipeline {
 mvn -Dmaven.test.failure.ignore clean package'''
         }
 
-        stash(name: 'build-test-artifacts', includes: '*/ target/surefire-reports/TEST-*.xml,target/*.jar')
+        stash(name: 'build-test-artifacts', includes: '**/Ch03/example-maven-project/target/surefire-reports/TEST-*.xml,target/*.jar')
       }
     }
 
